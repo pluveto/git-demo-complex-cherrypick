@@ -1,10 +1,6 @@
+#include <check_result.h>
 #include <stdio.h>
 #include <string.h>
-
-struct CheckResult {
-  int ok;
-  char emsg[100];
-};
 
 struct CheckResult is_all_value(const void* mem, size_t size, char value) {
   struct CheckResult result = {1, ""};
